@@ -3,16 +3,175 @@ body {
     width: 100%;
 }
 
+h2 {
+    font-size: 3.5rem !important;
+    padding-bottom: 40px !important;
+}
+
+
+
 #landingPage {
     position: relative;
     width: 100%;
     height: 100vh;
-    background-color: rgb(159, 159, 165);
+    background-image: linear-gradient(to right bottom, #00acb5f1, #4aa96bf3), url(assets/photo-1555099962-4199c345e5dd.jpeg);
+    background-size: cover;
+    background-position: top center;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%)
+}
+
+.navbar {
+    background-color: #393e46;
+}
+
+
+
+.navbar-nav a {
+    color: #eeeeee;
+}
+.navbar-nav a:hover {
+    color: #00adb5;
+}
+
+.navbar-brand {
+    color: #eeeeee;
+}
+.navbar-brand:hover {
+    color: #00adb5;
 }
 
 .intro {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    margin-left: -135px;
+    position: absolute !important;
+    text-align: center;
+    top: 35%;  
+}
+
+.intro h1 {
+    font-size: 8rem;
+    color: white;
+}
+
+.intro p{
+    font-size: 2rem;
+    color: white;
+}
+
+#aboutMe {
+    text-align: center;
+}
+
+.imgBox {
+    border-radius: 50px;
+}
+
+.imgBox img {
+    align-items: center;
+    border-radius: 150px;
+}
+
+.infoBox {
+    padding-top: 7%;
+    padding-bottom: 7%
+}
+
+#skills {
+    text-align: center;
+    padding: 325px 20% 325px 20%;
+    margin: 0 0;
+    background-image: linear-gradient(to right top, #00acb5f1, #4aa96bf3), url(assets/background_img_2.jpg);
+    clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+    background-size: cover;
+    background-position: top center;
+}
+
+#skills i {
+    font-size: 100px;
+    color: #ffffff;
+}
+
+#skills h3 {
+    color: #393e46;
+}
+
+#projects {
+    text-align: center;
+    padding: 100px 150px 100px 150px;  
+}
+
+.col-lg-6 img{
+    width: 100% ;
+}
+
+.projectWrapper:hover .projectInfo{
+    display: block;
+}
+
+.projectInfo {
+    display: none;
+    color: white;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to bottom, #00acb5f1, #4aa96bf3);
+    top: 0;
+    padding-top: 30%;
+}
+
+.projectInfo a {
+    text-decoration: none;
+}
+
+.rowsWrapper {
+    box-shadow: 0 0 20px 1px;
+}
+
+#contactMe {
+    text-align: center;
+    padding: 350px 10% 100px 10%;
+    clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
+    background-image: linear-gradient(to right bottom, #00acb5f1, #4aa96bf3), url(assets/background_img_3.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+label {
+    margin: 0;
+}
+
+.subBtn {
+    border: none;
+    background-image: linear-gradient(to bottom, #ffffff, #b4b4b4);
+    color: #000000;
+    box-shadow: 0 0 10px 1px black;
+    border-radius: 15px;
+}
+
+.subBtn:hover {
+    background-image: linear-gradient(to bottom, #0c23b9, #104daf);
+    color: white;
+}
+
+.myFooter {
+    background-color: #393e46;
+}
+
+.myFooter p {
+    color: #dadada;
+}
+
+.myFooter a{
+    color: #dadada;
+    font-size: 40px;
+    padding: 0 20px;
+}
+
+.myFooter a:hover {
+   
+}
+
+.copyright {
+    margin: auto;
+}
+
+.socialIcons {
+    text-align: right;
 }

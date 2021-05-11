@@ -82,8 +82,11 @@ h2 {
 }
 
 #aboutMe {
-    text-align: center;
-    
+    text-align: center; 
+}
+
+.infoBox {
+    font-size: 1.2rem;
 }
 
 .imgBox {
@@ -405,6 +408,14 @@ footer {
 
 @media only screen and (min-width: 1200px) {
 
+    #skills {
+        padding-right: 17% !important;
+        padding-left: 17% !important;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+
     .intro h1 {
         font-size: 8rem;
     }
@@ -412,11 +423,4 @@ footer {
     .intro p {
         font-size: 2rem;
     }
-
-    #skills {
-        padding-right: 17% !important;
-        padding-left: 17% !important;
-    }
-
-    
 }

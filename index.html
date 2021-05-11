@@ -10,6 +10,10 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,200&display=swap"
+        rel="stylesheet">
     <title>Chris' Portfolio</title>
 </head>
 
@@ -19,7 +23,7 @@
             <a class="navbar-brand" href="#"><i class="fas fa-laptop-code"></i></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
@@ -43,8 +47,8 @@
     </section>
 
     <section id="aboutMe" class="container">
-        <div class="row justify-content-center ">
-            <div class="col-lg-3">
+        <div class="aboutWrapper row justify-content-center ">
+            <div class="col-lg-12">
                 <h2>About me</h2>
             </div>
         </div>
@@ -59,10 +63,17 @@
                 </p>
             </div>
         </div>
+        <div class="row justify-content-center">
+            <div class="resDlWrapper col-lg-12">
+                <a href="assets/Resume V2.pdf" download>
+                   <button> Download <i class="fas fa-download"></i></button>
+                </a>
+            </div>
+        </div>
 
     </section>
 
-    <section id="skills" class="container-fluid bg-light">
+    <section id="skills" class="container bg-light">
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <h2>What I do</h2>
@@ -70,19 +81,19 @@
         </div>
 
         <div class="row justify-content-center">
-            <div class="col-md-4 p-4">
+            <div class="col-sm-6 col-md-4 p-4">
                 <div>
                     <i class="fab fa-html5"></i>
                     <h3>HTML</h3>
                 </div>
             </div>
-            <div class="col-md-4 p-4">
+            <div class="col-sm-6 col-md-4 p-4">
                 <div>
                     <i class="fab fa-css3-alt"></i>
                     <h3>CSS</h3>
                 </div>
             </div>
-            <div class="col-md-4 p-4">
+            <div class="col-sm-6 col-md-4 p-4">
                 <div>
                     <i class="fab fa-js"></i>
                     <h3>JAVASCRIPT</h3>
@@ -90,19 +101,19 @@
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-md-4 p-4">
+            <div class="col-sm-6 col-md-4 p-4">
                 <div>
                     <i class="fab fa-react"></i>
                     <h3>REACT</h3>
                 </div>
             </div>
-            <div class="col-md-4 p-4">
+            <div class="col-sm-6 col-md-4 p-4">
                 <div>
                     <i class="fab fa-bootstrap"></i>
                     <h3>BOOTSTRAP 4</h3>
                 </div>
             </div>
-            <div class="col-md-4 p-4">
+            <div class="col-sm-6 col-md-4 p-4">
                 <div>
                     <i class="fab fa-git-alt"></i>
                     <h3>GIT</h3>
@@ -110,19 +121,19 @@
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-md-4 p-4">
+            <div class="col-sm-6 col-md-4 p-4">
                 <div>
                     <i class="fab fa-node-js"></i>
                     <h3>NODE.JS</h3>
                 </div>
             </div>
-            <div class="col-md-4 p-4">
+            <div class="col-sm-6 col-md-4 p-4">
                 <div>
                     <i class="fas fa-cloud-upload-alt"></i>
                     <h3>DEPLOYMENT</h3>
                 </div>
             </div>
-            <div class="col-md-4 p-4">
+            <div class="col-sm-6 col-md-4 p-4">
                 <div>
                     <i class="fas fa-pencil-ruler"></i>
                     <h3>RESPONSIVE DESIGN</h3>
@@ -133,36 +144,44 @@
     </section>
 
     <section id="projects" class="container">
-        <div class="row justify-content-center">
+        <div class="projectsH2 row justify-content-center">
             <div class="col-sm-12">
                 <h2>Projects</h2>
             </div>
         </div>
         <div class="rowsWrapper row justify-content-center no-gutters">
-            <div class="projectWrapper position-relative col-sm-12 col-md-12 col-lg-6">
+            <div class="projectWrapper position-relative col-sm-12 col-md-6 col-lg-6">
                 <img class="img-fluid" src=assets/covid_tracker.jpg alt="Covid Tracker">
                 <div class="projectInfo position-absolute">
-                    <a href="https://covid-tracker-5d69d.web.app/"><h3>COVID TRACKER</h3></a>
+                    <a href="https://covid-tracker-5d69d.web.app/">
+                        <h3>COVID TRACKER</h3>
+                    </a>
                 </div>
             </div>
-            <div class="projectWrapper position-relative col-sm-12 col-md-12 col-lg-6">
+            <div class="projectWrapper position-relative col-sm-12 col-md-6 col-lg-6">
                 <img class="img-fluid" src="assets/gif_finder.jpg" alt="Gif Finder">
                 <div class="projectInfo position-absolute">
-                    <a href="https://gif-finder-11d3f.web.app/"><h3>GIF FINDER</h3></a>
+                    <a href="https://gif-finder-11d3f.web.app/">
+                        <h3>GIF FINDER</h3>
+                    </a>
                 </div>
             </div>
         </div>
         <div class="rowsWrapper row justify-content-center no-gutters">
-            <div class="projectWrapper position-relative col-sm-12 col-md-12 col-lg-6">
+            <div class="projectWrapper position-relative col-sm-12 col-md-6 col-lg-6">
                 <img class="img-fluid" src="assets/simon_game.jpg" alt="Simon Game">
                 <div class="projectInfo position-absolute">
-                    <a href="https://cblake35.github.io/Simon-Game/"><h3>SIMON GAME</h3></a>
+                    <a href="https://cblake35.github.io/Simon-Game/">
+                        <h3>SIMON GAME</h3>
+                    </a>
                 </div>
             </div>
-            <div class="projectWrapper position-relative col-sm-12 col-md-12 col-lg-6">
+            <div class="projectWrapper position-relative col-sm-12 col-md-6 col-lg-6">
                 <img class="img-fluid" src="assets/memory_game.jpg" alt="Memory">
                 <div class="projectInfo position-absolute ">
-                    <a href="https://cblake35.github.io/Memory-Game/"><h3>MEMORY GAME</h3></a>
+                    <a href="https://cblake35.github.io/Memory-Game/">
+                        <h3>MEMORY GAME</h3>
+                    </a>
                 </div>
             </div>
         </div>
@@ -178,12 +197,12 @@
             method="post">
             <div class="row justify-content-center">
                 <div class="col-md-12 mb-2">
-                    <label class="mb-0" for="full-name">Full Name</label>
+                    <label class="mb-0" for="full-name">Name</label>
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div class="col-md-12 mb-2">
-                    <input size=50 type="text" name="name" id="full-name" placeholder="First and Last" required="">
+                    <input size=50 type="text" name="name" id="full-name" placeholder="Name" required="">
                 </div>
             </div>
             <div class="row justify-content-center">
@@ -193,8 +212,7 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-md-12 mb-2">
-                    <input size=50 type="email" name="_replyto" id="email-address" placeholder="email@domain.tld"
-                        required="">
+                    <input size=50 type="email" name="_replyto" id="email-address" placeholder="Email" required="">
                 </div>
             </div>
             <div class="row justify-content-center">
@@ -211,7 +229,7 @@
             <div class="row justify-content-center">
                 <div class="col-md-4">
                     <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-                    <input class="subBtn pr-3 pl-3" type="submit" value="Submit">
+                    <button class="subBtn pr-3 pl-3" type="submit">Submit<i class="fas fa-paper-plane"></i></button>
                 </div>
             </div>
         </form>
@@ -222,7 +240,7 @@
             <div class="copyright col-sm-6 p-5">
                 <p>©Chris Blake. All rights reserved.</p>
             </div>
-            
+
             <div class="socialIcons col-sm-6 p-5">
                 <a href="www.facebook.com"><i class="fab fa-facebook-square"></i></a>
                 <a href="www.linkedin.com"><i class="fab fa-linkedin"></i></a>

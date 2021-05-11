@@ -1,10 +1,13 @@
 body {
     margin: 0;
     width: 100%;
+    font-family: 'Prompt', sans-serif !important;
 }
 
 h2 {
-    font-size: 3.5rem !important;
+    color: black;
+    font-size: 4rem !important;
+    font-weight: 600 !important;
     padding-bottom: 40px !important;
 }
 
@@ -24,21 +27,42 @@ h2 {
     background-color: #393e46;
 }
 
-
+.navbar-nav {
+    font-size: 1.2rem;
+}
 
 .navbar-nav a {
     color: #eeeeee;
 }
+
+
 .navbar-nav a:hover {
-    color: #00adb5;
+    background-image: linear-gradient(to right bottom, #00acb5, #4aa96b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .navbar-brand {
     color: #eeeeee;
 }
+
 .navbar-brand:hover {
-    color: #00adb5;
+    background-image: linear-gradient(to right bottom, #00acb5, #4aa96b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
+.navbar-toggler-icon {
+    color: #eeeeee;
+    height: auto !important;
+}
+
+.navbar-toggler-icon:hover {
+    background-image: linear-gradient(to right bottom, #00acb5, #4aa96b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 
 .intro {
     position: absolute !important;
@@ -48,6 +72,7 @@ h2 {
 
 .intro h1 {
     font-size: 8rem;
+    font-weight: 600;
     color: white;
 }
 
@@ -58,6 +83,7 @@ h2 {
 
 #aboutMe {
     text-align: center;
+    
 }
 
 .imgBox {
@@ -74,14 +100,40 @@ h2 {
     padding-bottom: 7%
 }
 
+.resDlWrapper button{
+    padding-left: 15px;
+    margin-top: 100px;
+    border: none;
+    background-image: linear-gradient(to bottom, #00acb5, #4aa96b);
+    color: #ffffff;
+    box-shadow: 0 0 10px 1px black;
+    border-radius: 15px;
+    font-size: 1.2rem;
+}
+
+.resDlWrapper button:hover {
+    background-image: linear-gradient(to right, #115dcf, #131da3);
+    color: white;
+    cursor: pointer;
+}
+
+.resDlWrapper i {
+    padding-right: 10px;
+}
+
+.resDlWrapper span {
+    padding-left: 10px;
+}
+
 #skills {
     text-align: center;
-    padding: 325px 20% 325px 20%;
+    padding: 325px 20% 325px 20% !important;
     margin: 0 0;
     background-image: linear-gradient(to right top, #00acb5f1, #4aa96bf3), url(assets/background_img_2.jpg);
     clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
     background-size: cover;
     background-position: top center;
+    max-width: none;
 }
 
 #skills i {
@@ -111,13 +163,27 @@ h2 {
     color: white;
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(to bottom, #00acb5f1, #4aa96bf3);
+    background-image: linear-gradient(to bottom, #000000f3, #000000f1);
     top: 0;
     padding-top: 30%;
 }
 
 .projectInfo a {
+    display: inline-block;
     text-decoration: none;
+    color: white;
+    margin: none;
+}
+
+.projectInfo a:hover {
+    background-image: linear-gradient(to right bottom, #00acb5, #4aa96b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+}
+
+.projectInfo h3{
+    display: inline;
 }
 
 .rowsWrapper {
@@ -137,20 +203,28 @@ label {
     margin: 0;
 }
 
+
 .subBtn {
+    margin-top: 20px;
     border: none;
     background-image: linear-gradient(to bottom, #ffffff, #b4b4b4);
-    color: #000000;
+    color: #393e46;
     box-shadow: 0 0 10px 1px black;
     border-radius: 15px;
+    font-size: 1.2rem;
+}
+
+.subBtn i {
+    padding-left: 5px;
 }
 
 .subBtn:hover {
-    background-image: linear-gradient(to bottom, #0c23b9, #104daf);
+    background-image: linear-gradient(to right, #115dcf, #131da3);
     color: white;
+    cursor: pointer;
 }
 
-.myFooter {
+footer {
     background-color: #393e46;
 }
 
@@ -165,7 +239,9 @@ label {
 }
 
 .myFooter a:hover {
-   
+    background-image: linear-gradient(to right bottom, #00acb5, #4aa96b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .copyright {
@@ -174,4 +250,173 @@ label {
 
 .socialIcons {
     text-align: right;
+}
+
+
+/* Media Queries */
+
+@media only screen and (min-width: 350px) {
+
+    #landingPage {
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    }
+
+    .intro h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 3rem !important;
+    }
+
+    .intro p {
+        font-size: 1.5rem;
+    }
+
+    #aboutMe {
+        padding: 100px 0;
+    }
+
+    .row {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    
+
+    #skills {
+        clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #contactMe {
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+    }
+
+    
+    #full-name {
+        width: 100%;
+    }
+    
+    #email-address {
+        width: 100%;
+    }
+    
+    #message  {
+        width: 100%;
+    }
+
+    #projects {
+        padding: 100px 0px;
+    }
+
+    .projectsH2 {
+        margin: 0 !important;
+    }
+
+    .copyright {
+        text-align: center;
+    }
+
+    .socialIcons {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 577px) {
+
+    #skills {
+        padding-left: 50px !important;
+        padding-right: 50px  !important;
+    }
+    
+    #projects {
+        padding-left: 50px !important;
+        padding-right: 50px  !important;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+
+    #landingPage {
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    }
+
+    #skills {
+        clip-path: polygon(0 15%, 100% 0, 100% 90%, 0 100%);
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #contactMe {
+        clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+    }
+
+    #projects {
+        padding-left: 8% !important;
+        padding-right: 8%  !important;
+    }
+
+    
+    #full-name {
+        max-width: 550px;
+    }
+    
+    #email-address {
+        max-width: 550px;
+    }
+    
+    #message  {
+        max-width: 550px;
+    }
+
+}
+
+@media only screen and (min-width: 991px) {
+
+    #landingPage {
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    }
+
+    #skills {
+        clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+        padding-left: 10% !important;
+        padding-right: 10%  !important;
+    }
+
+    #contactMe {
+        clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .intro h1 {
+        font-size: 6rem;
+    }
+
+    .intro p {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 4rem !important;
+    }
+
+   
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .intro h1 {
+        font-size: 8rem;
+    }
+
+    .intro p {
+        font-size: 2rem;
+    }
+
+    #skills {
+        padding-right: 17% !important;
+        padding-left: 17% !important;
+    }
+
+    
 }

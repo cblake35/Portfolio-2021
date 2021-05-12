@@ -73,7 +73,7 @@ h2 {
 .intro h1 {
     font-size: 8rem;
     font-weight: 600;
-    color: white;
+    color: white;;
 }
 
 .intro p{
@@ -130,7 +130,7 @@ h2 {
 
 #skills {
     text-align: center;
-    padding: 325px 20% 325px 20% !important;
+    padding: 325px 0 325px 0 !important;
     margin: 0 0;
     background-image: linear-gradient(to right top, #00acb5f1, #4aa96bf3), url(assets/background_img_2.jpg);
     clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
@@ -258,7 +258,9 @@ footer {
 
 /* Media Queries */
 
-@media only screen and (min-width: 350px) {
+
+
+@media only screen and (min-width: 300px) {
 
     #landingPage {
         clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
@@ -278,6 +280,10 @@ footer {
 
     #aboutMe {
         padding: 100px 0;
+    }
+
+    .resDlWrapper button{
+        margin-top: 30px;
     }
 
     .row {
@@ -319,11 +325,14 @@ footer {
 
     .copyright {
         text-align: center;
+        padding: 1rem !important;
     }
 
     .socialIcons {
         text-align: center;
+        padding: 1rem !important;
     }
+
 }
 
 @media only screen and (min-width: 577px) {
@@ -360,7 +369,6 @@ footer {
         padding-right: 8%  !important;
     }
 
-    
     #full-name {
         max-width: 550px;
     }
@@ -373,12 +381,24 @@ footer {
         max-width: 550px;
     }
 
+    .copyright {
+        padding: 2rem !important;
+    }
+
+    .socialIcons {
+        padding: 2rem !important;
+    }
+
 }
 
 @media only screen and (min-width: 991px) {
 
     #landingPage {
         clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    }
+
+    .resDlWrapper button{
+        margin-top: 100px;
     }
 
     #skills {
@@ -389,14 +409,6 @@ footer {
 
     #contactMe {
         clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
-    }
-
-    .intro h1 {
-        font-size: 6rem;
-    }
-
-    .intro p {
-        font-size: 1.8rem;
     }
 
     h2 {
@@ -412,9 +424,17 @@ footer {
         padding-right: 17% !important;
         padding-left: 17% !important;
     }
+
+    .intro h1 {
+        font-size: 6rem;
+    }
+
+    .intro p {
+        font-size: 1.8rem;
+    }
 }
 
-@media only screen and (min-width: 1500px) {
+@media only screen and (min-width: 1540px) {
 
     .intro h1 {
         font-size: 8rem;
